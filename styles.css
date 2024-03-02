@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'THUNDER';
+    src: url('fonts/OpenType-TT/Thunder-BlackHC.ttf') format('ttf'),
+         
+    /* Add more src lines for additional file formats if necessary */
+  }
+  
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +14,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+  font-family: 'THUNDER', sans-serif;
 }
 
 .menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Change left to right */
     background-color: white;
     padding: 20px;
     border-bottom: 2px solid black;
@@ -28,7 +40,7 @@ body {
   .menu ul li a {
     text-decoration: none;
     color: black;
-    position: relative; /* Add position relative */
+    position: relative;
   }
   
   .menu ul li a:hover::before {
@@ -37,13 +49,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% + 10px); /* Add padding */
-    height: calc(100% + 10px); /* Add padding */
-    background-color: green;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background-color: rgb(111, 138, 111);
     z-index: -1;
-    border-radius: 5px; /* Adjust border radius */
-    transition: width 0.3s ease, height 0.3s ease; /* Add transition */
+    border-radius: 5px;
+    transition: width 0.3s ease, height 0.3s ease;
   }
+  
 
 .container {
   text-align: center;
