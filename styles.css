@@ -8,6 +8,49 @@ body {
   background-color: #f0f0f0;
 }
 
+.menu {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid black;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: green;
+  }
+  
+  .menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  
+  .menu:hover::before {
+    width: 100%;
+  }
+
 .container {
   text-align: center;
 }
