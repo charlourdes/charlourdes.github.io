@@ -28,27 +28,21 @@ body {
   .menu ul li a {
     text-decoration: none;
     color: black;
-    transition: color 0.3s ease;
+    position: relative; /* Add position relative */
   }
   
-  .menu ul li a:hover {
-    color: green;
-  }
-  
-  .menu::before {
+  .menu ul li a:hover::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 10px); /* Add padding */
+    height: calc(100% + 10px); /* Add padding */
     background-color: green;
     z-index: -1;
-    transition: width 0.3s ease;
-  }
-  
-  .menu:hover::before {
-    width: 100%;
+    border-radius: 5px; /* Adjust border radius */
+    transition: width 0.3s ease, height 0.3s ease; /* Add transition */
   }
 
 .container {
@@ -63,13 +57,3 @@ p {
   font-family: Arial, sans-serif;
 }
 
-.gradient {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(95,140,89,1) 0%, rgba(191,235,201,1) 100%);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
