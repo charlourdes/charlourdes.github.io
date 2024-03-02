@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'THUNDER';
     src: url('fonts/OpenType-TT/Thunder-BlackHC.ttf') format('ttf'),
+    src: url('fonts/OpenType-TT/Thunder-BlackLCitalic.ttf') format('ttf'),
          
     /* Add more src lines for additional file formats if necessary */
   }
