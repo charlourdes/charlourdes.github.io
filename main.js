@@ -11,3 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
         link.style.setProperty('--link-width', `${linkWidth}px`);
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('show-menu');
+        menuToggle.classList.toggle('active');
+    });
+});

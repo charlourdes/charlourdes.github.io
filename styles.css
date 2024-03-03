@@ -1,63 +1,70 @@
+/* Global Styles */
+
 .css-selector {
     background: linear-gradient(303deg, #aee2b9, #c8b6e4);
     background-size: 400% 400%;
-
     -webkit-animation: AnimationName 5s ease infinite;
     -moz-animation: AnimationName 5s ease infinite;
     animation: AnimationName 5s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
+
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
 
 @font-face {
     font-family: 'Franchise-free-bold';
-    src: url('Fonts/Franchise-Free-Bold.woff') format('woff2'),;
+    src: url('Fonts/Franchise-Free-Bold.woff') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'THUNDER';
-    src: url('Fonts/Web-PS/Thunder-BlackLC.woff2') format('woff2'),;
+    src: url('Fonts/Web-PS/Thunder-BlackLC.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'THUNDER-LIGHT';
-    src: url('Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2'),;
+    src: url('Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'THUNDER-MEDIUM';
-    src: url('Fonts/Web-TT/Thunder-MediumLC.woff') format('woff2'),;
+    src: url('Fonts/Web-TT/Thunder-MediumLC.woff') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Typography */
+
 .h1 {
     font-size: 12em;
     margin-bottom: 20px;
-    color: rgba(69, 91, 72, 1); /* Initial color for the heading */
+    color: rgba(69, 91, 72, 1);
     font-family: 'THUNDER', sans-serif;
     letter-spacing: 5px;
 }
+
+/* Layout */
 
 body {
     margin: 0;
@@ -66,8 +73,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c86fff; /* Fallback color */
-    font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the default font family */
+    background-color: #c86fff;
+    font-family: 'THUNDER-MEDIUM', sans-serif;
     background: linear-gradient(303deg, #aee2b9, #c8b6e4);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 10s ease infinite;
@@ -76,36 +83,35 @@ body {
 }
 
 .Landing-text {
-    font-size: 2.5em; /* Set the desired font size */
-    font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the desired font family */
-    /* Add any other styles specific to this element */
+    font-size: 2.5em;
+    font-family: 'THUNDER-MEDIUM', sans-serif;
     line-height: 1;
     color: rgb(81, 60, 99);
 }
 
 .contact-button {
-    margin-top: 10px; /* Add top margin to create space between the text and the button */
-    width: 140px; /* Set the width of the button */
-    height: 40px; /* Set the height of the button */
-    font-size: 0.5em; /* Set the font size of the button text */
-    padding: 10px 20px; /* Set the padding inside the button */
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 0.5em;
+    padding: 10px 20px;
     font-family: 'THUNDER-MEDIUM', sans-serif;
     letter-spacing: 1px;
     border-radius: 20px;
-    background-color: white; /* Initial background color for the button */
-    color: black; /* Initial text color for the button */
-    text-decoration: none; /* Remove underline from button text */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    transition: background-color 0.3s, color 0.3s; /* Add transition effect for hover */
-    border: 2px solid white; /* Add black border */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid white;
 }
 
 .contact-button:hover {
-    background-color: rgb(81, 60, 99); /* Change background color to green on hover */
-    color: white; /* Change text color to white on hover */
-    border: none; /* Remove border on hover */
+    background-color: rgb(81, 60, 99);
+    color: white;
+    border: none;
 }
 
 .menu {
@@ -113,10 +119,10 @@ body {
     top: 0;
     left: 0;
     background-color: transparent;
-    padding: 20px 20px; /* Adjust padding as needed */
+    padding: 20px 20px;
     border-bottom: none;
     font-family: 'THUNDER-MEDIUM', sans-serif;
-    width: calc(100% - 40px); /* Adjust width to account for padding */
+    width: calc(100% - 40px);
     text-align: right;
 }
 
@@ -128,35 +134,35 @@ body {
 
 .menu ul li {
     display: inline-block;
-    margin-right: 40px; /* Increase the margin-right value to add more space */
+    margin-right: 40px;
 }
 
 .menu ul li:last-child {
-    margin-right: 0; /* Remove margin from the last menu item */
+    margin-right: 0;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: rgb(255, 254, 255);
-    font-weight: bold; /* Make the menu items bold */
-    font-size: 1.5em; /* Increase the font size */
+    font-weight: bold;
+    font-size: 1.5em;
     position: relative;
     letter-spacing: 1px;
 }
 
 .menu ul li a:hover {
-    color: rgb(81, 60, 99); /* Change text color to green on hover */
+    color: rgb(81, 60, 99);
 }
 
 .menu ul li a i {
-    font-size: 28px; /* Increase the icon size */
-    margin-right: 10px; /* Add space between icon and text */
+    font-size: 28px;
+    margin-right: 10px;
     color: rgb(255, 255, 255);
-    vertical-align: middle; /* Align the icons vertically with the text */
+    vertical-align: middle;
 }
 
 .menu ul li a:hover i {
-    color: rgb(81, 60, 99); /* Change icon color to green on hover */
+    color: rgb(81, 60, 99);
 }
 
 .container {
@@ -164,21 +170,64 @@ body {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     /* Header */
     h1 {
-        font-size: 6em; /* Further reduced font size for very small screens */
-        margin-bottom: 5px; /* Further reduced margin for very small screens */
+        font-size: 6em;
+        margin-bottom: 5px;
     }
 
     /* Landing Text */
     .Landing-text {
-        font-size: 1em; /* Further reduced font size for very small screens */
+        font-size: 1em;
     }
 
     /* Contact Button */
     .contact-button {
         width: 80px; 
         height: 25px;
+    }
+
+    /* Hamburger Menu */
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-toggle i {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    /* Show menu items when hamburger menu is clicked */
+    .menu-toggle.active + .menu ul {
+        display: block;
+    }
+}
+
+/* Additional Styles for Larger Screens */
+@media only screen and (min-width: 751px) {
+    .menu-toggle {
+        display: none;
     }
 }
