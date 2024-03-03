@@ -51,7 +51,7 @@
     font-style: normal;
 }
 
-h1 {
+.h1 {
     font-size: 12em;
     margin-bottom: 20px;
     color: rgba(69, 91, 72, 1); /* Initial color for the heading */
@@ -163,3 +163,20 @@ body {
     text-align: center;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    h1 {
+        font-size: 6em; /* Further reduced font size for very small screens */
+        margin-bottom: 5px; /* Further reduced margin for very small screens */
+    }
+
+    /* Landing Text */
+    .Landing-text {
+        font-size: 1em; /* Further reduced font size for very small screens */
+    }
+
+    /* Contact Button */
+    .contact-button {
+        width: 80px; /* Further reduced width for very small screens */
+        height: 25px; /* Further reduced height
