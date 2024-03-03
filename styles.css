@@ -178,5 +178,6 @@ body {
 
     /* Contact Button */
     .contact-button {
-        width: 80px; /* Further reduced width for very small screens */
-        height: 25px; /* Further reduced height
+        width: 80px; 
+        height: 25px;
+    }
