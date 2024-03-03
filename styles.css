@@ -1,3 +1,28 @@
+.css-selector {
+    background: linear-gradient(303deg, #aee2b9, #c8b6e4);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 @font-face {
     font-family: 'Franchise-free-bold';
     src: url('Fonts/Franchise-Free-Bold.woff') format('woff2'),;
@@ -26,6 +51,14 @@
     font-style: normal;
 }
 
+h1 {
+    font-size: 12em;
+    margin-bottom: 20px;
+    color: rgba(69, 91, 72, 1); /* Initial color for the heading */
+    font-family: 'THUNDER', sans-serif;
+    letter-spacing: 5px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -33,9 +66,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #c86fff; /* Fallback color */
     font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the default font family */
-   
+    background: linear-gradient(303deg, #aee2b9, #c8b6e4);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 .Landing-text {
@@ -43,24 +80,39 @@ body {
     font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the desired font family */
     /* Add any other styles specific to this element */
     line-height: 1;
+    color: rgb(81, 60, 99);
 }
 
+.contact-button {
+    margin-top: 10px; /* Add top margin to create space between the text and the button */
+    width: 140px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    font-size: 0.5em; /* Set the font size of the button text */
+    padding: 10px 20px; /* Set the padding inside the button */
+    font-family: 'THUNDER-MEDIUM', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: white; /* Initial background color for the button */
+    color: black; /* Initial text color for the button */
+    text-decoration: none; /* Remove underline from button text */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect for hover */
+    border: 2px solid white; /* Add black border */
+}
 
-
-h1 {
-    font-size: 12em;
-    margin-bottom: 20px;
-    color: rgba(69, 91, 72, 1); /* Initial color for the heading */
-    font-family: 'THUNDER', sans-serif;
-    letter-spacing: 5px;
-    
+.contact-button:hover {
+    background-color: rgb(81, 60, 99); /* Change background color to green on hover */
+    color: white; /* Change text color to white on hover */
+    border: none; /* Remove border on hover */
 }
 
 .menu {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: transparent;
     padding: 20px 20px; /* Adjust padding as needed */
     border-bottom: none;
     font-family: 'THUNDER-MEDIUM', sans-serif;
@@ -85,27 +137,29 @@ h1 {
 
 .menu ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 254, 255);
     font-weight: bold; /* Make the menu items bold */
-    font-size: 1.2em; /* Increase the font size */
+    font-size: 1.5em; /* Increase the font size */
     position: relative;
+    letter-spacing: 1px;
 }
 
 .menu ul li a:hover {
-    color: rgba(69, 91, 72, 1); /* Change text color to green on hover */
+    color: rgb(81, 60, 99); /* Change text color to green on hover */
 }
 
 .menu ul li a i {
     font-size: 28px; /* Increase the icon size */
     margin-right: 10px; /* Add space between icon and text */
-    color: black;
+    color: rgb(255, 255, 255);
     vertical-align: middle; /* Align the icons vertically with the text */
 }
 
 .menu ul li a:hover i {
-    color: rgba(69, 91, 72, 1); /* Change icon color to green on hover */
+    color: rgb(81, 60, 99); /* Change icon color to green on hover */
 }
 
 .container {
     text-align: center;
 }
+
