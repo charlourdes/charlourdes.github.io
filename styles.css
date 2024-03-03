@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Franchise-free-bold';
+    src: url('Fonts/Franchise-Free-Bold.woff') format('woff2'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'THUNDER';
+    src: url('Fonts/Web-PS/Thunder-BlackLC.woff2') format('woff2'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'THUNDER-LIGHT';
+    src: url('Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'THUNDER-MEDIUM';
+    src: url('Fonts/Web-TT/Thunder-MediumLC.woff') format('woff2'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,14 +34,26 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-    font-family: 'Baloo Da 2', sans-serif; /* Specify the default font family */
+    font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the default font family */
+   
 }
 
+.Landing-text {
+    font-size: 2.5em; /* Set the desired font size */
+    font-family: 'THUNDER-MEDIUM', sans-serif; /* Specify the desired font family */
+    /* Add any other styles specific to this element */
+    line-height: 1;
+}
+
+
+
 h1 {
-    font-size: 5em;
+    font-size: 12em;
     margin-bottom: 20px;
-    color: rgba(69, 91, 72, 1);
-    /* No need to redeclare font-family for h1 if it's already declared for body */
+    color: rgba(69, 91, 72, 1); /* Initial color for the heading */
+    font-family: 'THUNDER', sans-serif;
+    letter-spacing: 5px;
+    
 }
 
 .menu {
@@ -22,8 +62,8 @@ h1 {
     left: 0;
     background-color: white;
     padding: 20px 20px; /* Adjust padding as needed */
-    border-bottom: 2px solid black;
-    font-family: 'Baloo Da 2', sans-serif;
+    border-bottom: none;
+    font-family: 'THUNDER-MEDIUM', sans-serif;
     width: calc(100% - 40px); /* Adjust width to account for padding */
     text-align: right;
 }
@@ -51,6 +91,10 @@ h1 {
     position: relative;
 }
 
+.menu ul li a:hover {
+    color: rgba(69, 91, 72, 1); /* Change text color to green on hover */
+}
+
 .menu ul li a i {
     font-size: 28px; /* Increase the icon size */
     margin-right: 10px; /* Add space between icon and text */
@@ -58,32 +102,8 @@ h1 {
     vertical-align: middle; /* Align the icons vertically with the text */
 }
 
-.menu ul li a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0; /* Initialize width */
-    height: calc(100% + 10px);
-    background-color: rgba(69, 91, 72, 1);
-    z-index: -1;
-    border-radius: 20px;
-    transition: width 0.2s ease, height 0.2s ease;
-    opacity: 0; /* Initially hide the hover effect */
-}
-
-.menu ul li a:hover::before {
-    width: calc(var(--link-width) + 40px); /* Adjust the width for the hover effect */
-    opacity: 1; /* Show the hover effect on hover */
-}
-
-.menu ul li a:hover {
-    color: white; /* Change text color to white on hover */
-}
-
 .menu ul li a:hover i {
-    color: white; /* Change icon color to white on hover */
+    color: rgba(69, 91, 72, 1); /* Change icon color to green on hover */
 }
 
 .container {
